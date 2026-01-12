@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peter Williams | Military Historian</title>
+  <meta name="description" content="Dr. Peter Williams - Australian military historian specializing in WWII's Pacific campaigns. Author of Japan's Pacific War and The Kokoda Campaign 1942.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'EB Garamond', Georgia, serif; }
+    .font-sans { font-family: system-ui, -apple-system, sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen bg-[#f4f1eb] text-[#2c2825]">
+
+  <!-- SVG Patterns (hidden) -->
+  <svg class="hidden">
+    <defs>
+      <!-- Tactical Map Pattern -->
+      <pattern id="tacticalGrid" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+        <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#6b8cae" stroke-width="0.3" opacity="0.4"/>
+      </pattern>
+      <pattern id="tacticalTopo" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+        <path d="M0 60 Q 30 40, 60 60 T 120 60" fill="none" stroke="#8b7355" stroke-width="0.5" opacity="0.3"/>
+        <path d="M0 80 Q 30 60, 60 80 T 120 80" fill="none" stroke="#8b7355" stroke-width="0.5" opacity="0.3"/>
+        <path d="M0 40 Q 30 20, 60 40 T 120 40" fill="none" stroke="#8b7355" stroke-width="0.5" opacity="0.3"/>
+        <circle cx="90" cy="50" r="20" fill="none" stroke="#8b7355" stroke-width="0.3" opacity="0.2"/>
+        <circle cx="90" cy="50" r="35" fill="none" stroke="#8b7355" stroke-width="0.3" opacity="0.2"/>
+      </pattern>
+      <!-- Topo Map Pattern -->
+      <pattern id="topoFine" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+        <path d="M0 40 Q 20 25, 40 40 T 80 40" fill="none" stroke="#9b8b7b" stroke-width="0.5"/>
+        <path d="M0 55 Q 20 40, 40 55 T 80 55" fill="none" stroke="#9b8b7b" stroke-width="0.4"/>
+        <path d="M0 25 Q 20 10, 40 25 T 80 25" fill="none" stroke="#9b8b7b" stroke-width="0.4"/>
+        <g transform="translate(50, 60)" opacity="0.3">
+          <line x1="0" y1="0" x2="-5" y2="10" stroke="#7b6b5b" stroke-width="0.5"/>
+          <line x1="3" y1="0" x2="-2" y2="10" stroke="#7b6b5b" stroke-width="0.5"/>
+          <line x1="6" y1="0" x2="1" y2="10" stroke="#7b6b5b" stroke-width="0.5"/>
+        </g>
+      </pattern>
+      <!-- About Grid Pattern -->
+      <pattern id="aboutGrid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8b9bab" stroke-width="0.5"/>
+      </pattern>
+    </defs>
+  </svg>
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-[#f4f1eb]/90 backdrop-blur-md border-b border-[#d4cfc5]">
+    <div class="max-w-5xl mx-auto px-5 py-3 flex items-center justify-between">
+      <a href="#" class="font-medium text-[#2c2825]">Peter Williams</a>
+      <div class="flex items-center gap-6 text-sm font-sans">
+        <a href="#books" class="text-[#6b6560] hover:text-[#2c2825] transition-colors">Books</a>
+        <a href="#media" class="text-[#6b6560] hover:text-[#2c2825] transition-colors">Media</a>
+        <a href="#about" class="text-[#6b6560] hover:text-[#2c2825] transition-colors">About</a>
+        <a href="mailto:askme@peterdwilliams.com" class="text-[#c41e3a] hover:text-[#a01830] transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="max-w-5xl mx-auto px-5 pt-10 pb-8">
+    <h1 class="text-3xl md:text-4xl leading-tight mb-4">
+      Hey, I'm Peter 👋
+      <span class="text-[#6b6560]"> Welcome to my corner of military history.</span>
+    </h1>
+    <p class="text-base text-[#6b6560] max-w-2xl leading-relaxed">
+      I'm an Australian <a href="#about" class="text-[#2c2825] underline decoration-[#c41e3a] decoration-2 underline-offset-2">military historian</a> specializing 
+      in WWII's Pacific campaigns. Three decades of <a href="#media" class="text-[#2c2825] underline decoration-[#c41e3a] decoration-2 underline-offset-2">interviews with Japanese veterans</a> and 
+      <a href="#books" class="text-[#2c2825] underline decoration-[#c41e3a] decoration-2 underline-offset-2">books</a> that challenge conventional narratives.
+    </p>
+  </header>
+
+  <!-- Bento Grid -->
+  <main id="books" class="max-w-5xl mx-auto px-5 pb-16">
+    <div class="grid grid-cols-6 md:grid-cols-12 gap-3" style="grid-auto-rows: 100px;">
+      
+      <!-- Book 1 - Large -->
+      <a 
+        href="https://bookshop.org/p/books/japan-s-pacific-war-personal-accounts-of-the-emperor-s-warriors-peter-williams/16543015"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="col-span-6 md:col-span-8 row-span-3 group relative rounded-xl overflow-hidden border border-[#d4cfc5] hover:border-[#c41e3a]/40 transition-all duration-300 hover:shadow-lg"
+      >
+        <!-- Topo Map Background -->
+        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+          <rect width="100%" height="100%" fill="#f0ebe3"/>
+          <rect width="100%" height="100%" fill="url(#topoFine)"/>
+          <path d="M 0 280 Q 100 240, 180 300 Q 250 340, 350 280 L 400 300 L 400 400 L 0 400 Z" fill="#d5e3ed" opacity="0.4"/>
+          <path d="M 0 280 Q 100 240, 180 300 Q 250 340, 350 280 L 400 300" fill="none" stroke="#5a7a8a" stroke-width="1"/>
+          <text x="220" y="120" fill="#4a4a4a" font-size="11" font-style="italic" opacity="0.5">NAGO-WAN</text>
+        </svg>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#2c2825]/50 via-transparent to-transparent"></div>
+        
+        <div class="relative h-full p-5 flex flex-col justify-between">
+          <span class="inline-block self-start px-2.5 py-1 bg-[#c41e3a] text-white text-xs rounded-full font-sans">
+            Books · 2021
+          </span>
+          <div>
+            <h3 class="text-2xl font-medium text-[#2c2825] group-hover:text-[#c41e3a] transition-colors mb-1">
+              Japan's Pacific War
+            </h3>
+            <p class="text-[#5b5550] italic">Personal Accounts of the Emperor's Warriors</p>
+            <p class="text-xs text-[#7b7570] mt-2 font-sans">Pen &amp; Sword Publishing</p>
+          </div>
+        </div>
+        
+        <div class="absolute bottom-5 right-5 w-10 h-10 rounded-full bg-[#2c2825] flex items-center justify-center group-hover:bg-[#c41e3a] transition-all">
+          <svg class="w-4 h-4 text-white -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </div>
+      </a>
+
+      <!-- Stats Card -->
+      <div class="col-span-3 md:col-span-4 row-span-2 rounded-xl bg-[#2c2825] text-[#f4f1eb] p-4 flex flex-col justify-between">
+        <div class="flex justify-between items-start">
+          <div>
+            <p class="text-2xl font-light">30+</p>
+            <p class="text-[10px] text-[#a09890] uppercase tracking-wide font-sans">Years</p>
+          </div>
+          <div>
+            <p class="text-2xl font-light">PhD</p>
+            <p class="text-[10px] text-[#a09890] uppercase tracking-wide font-sans">History</p>
+          </div>
+        </div>
+        <div>
+          <p class="text-2xl font-light">150k+</p>
+          <p class="text-[10px] text-[#a09890] uppercase tracking-wide font-sans">Video Views</p>
+        </div>
+      </div>
+
+      <!-- Video Card 2 - Small -->
+      <a 
+        href="https://www.youtube.com/watch?v=EJdFKjsiRdU"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="col-span-3 md:col-span-4 row-span-1 group rounded-xl overflow-hidden relative bg-[#1a1815] flex items-center gap-3 p-3"
+      >
+        <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#c41e3a] transition-colors">
+          <svg class="w-4 h-4 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <p class="text-xs text-white truncate">Australia's Thermopylae</p>
+          <p class="text-[10px] text-white/50 font-sans">WW2TV · 10k views</p>
+        </div>
+      </a>
+
+      <!-- Video Card 1 - Featured -->
+      <a 
+        href="https://www.youtube.com/watch?v=6rTH767nThc"
+        target="_blank"
+        rel="noopener noreferrer"
+        id="media"
+        class="col-span-6 md:col-span-5 row-span-2 group rounded-xl overflow-hidden relative bg-gradient-to-br from-[#2a2520] to-[#1a1815]"
+      >
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+        <div class="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-bl from-[#c41e3a]/10 to-transparent"></div>
+        
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-14 h-14 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center group-hover:bg-[#c41e3a] transition-all duration-300 group-hover:scale-110">
+            <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+        </div>
+        
+        <div class="absolute top-4 left-4 flex items-center gap-2">
+          <span class="px-2 py-1 bg-[#c41e3a] text-white text-[10px] rounded-full font-sans">WW2TV</span>
+          <span class="text-[10px] text-white/70 font-sans">150k+ views</span>
+        </div>
+        
+        <div class="absolute bottom-4 left-4 right-4">
+          <h3 class="text-base text-white font-medium">Interviewing Japanese Veterans</h3>
+          <p class="text-[10px] text-white/50 mt-1 font-sans">Featured Interview</p>
+        </div>
+      </a>
+
+      <!-- Book 2 -->
+      <a 
+        href="https://bookshop.org/p/books/the-kokoda-campaign-1942-myth-and-reality-peter-williams/988064"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="col-span-6 md:col-span-7 row-span-2 group rounded-xl overflow-hidden relative border border-[#d4cfc5] hover:border-[#c41e3a]/40 transition-all duration-300 hover:shadow-lg"
+      >
+        <!-- Tactical Map Background -->
+        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+          <rect width="100%" height="100%" fill="#e8e3d9"/>
+          <rect width="100%" height="100%" fill="url(#tacticalTopo)"/>
+          <rect width="100%" height="100%" fill="url(#tacticalGrid)"/>
+          <circle cx="320" cy="80" r="35" fill="none" stroke="#c41e3a" stroke-width="1.5" stroke-dasharray="8 4" opacity="0.6"/>
+          <circle cx="320" cy="80" r="20" fill="none" stroke="#c41e3a" stroke-width="1" opacity="0.4"/>
+          <path d="M 30 220 Q 100 180 180 200 T 380 170" fill="none" stroke="#2c2825" stroke-width="1.5" opacity="0.3"/>
+          <text x="300" y="85" fill="#c41e3a" font-size="8" opacity="0.7">OBJ-A</text>
+        </svg>
+        
+        <div class="relative h-full p-4 flex flex-col justify-between">
+          <span class="inline-block self-start px-2.5 py-1 bg-[#6b5a4a] text-white text-xs rounded-full font-sans">
+            Books · 2012
+          </span>
+          <div>
+            <h3 class="text-xl font-medium text-[#2c2825] group-hover:text-[#c41e3a] transition-colors mb-1">
+              The Kokoda Campaign 1942
+            </h3>
+            <p class="text-sm text-[#6b6560] italic">Myth and Reality</p>
+            <p class="text-xs text-[#8b8580] mt-1 font-sans">Cambridge University Press</p>
+          </div>
+        </div>
+        
+        <div class="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-[#2c2825] flex items-center justify-center group-hover:bg-[#c41e3a] transition-colors">
+          <svg class="w-4 h-4 text-white -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </div>
+      </a>
+
+      <!-- Publications Card -->
+      <div class="col-span-6 md:col-span-5 row-span-2 rounded-xl bg-white border border-[#e4dfd5] p-4">
+        <span class="text-[10px] text-[#c41e3a] font-medium uppercase tracking-wide font-sans">Publications</span>
+        <h3 class="text-base font-medium mt-1 mb-3">Selected Works</h3>
+        <div class="space-y-2 text-xs font-sans">
+          <div class="flex justify-between"><span class="text-[#6b6560]">Against Overwhelming Odds?</span><span class="text-[#a09890]">2017</span></div>
+          <div class="flex justify-between"><span class="text-[#6b6560]">Kokoda for Dummies</span><span class="text-[#a09890]">2012</span></div>
+          <div class="flex justify-between"><span class="text-[#6b6560]">Battle of Anzac Ridge</span><span class="text-[#a09890]">2008</span></div>
+          <div class="flex justify-between"><span class="text-[#6b6560]">Ottoman Artillery at Gallipoli</span><span class="text-[#a09890]">2005</span></div>
+          <div class="flex justify-between"><span class="text-[#6b6560]">Japanese 18th Army in New Guinea</span><span class="text-[#a09890]">2006</span></div>
+        </div>
+      </div>
+
+      <!-- About Card -->
+      <div 
+        id="about"
+        class="col-span-6 md:col-span-7 row-span-2 rounded-xl bg-[#e8e3d9] border border-[#d4cfc5] p-4 relative overflow-hidden"
+      >
+        <svg class="absolute inset-0 w-full h-full opacity-15" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice">
+          <rect width="100%" height="100%" fill="url(#aboutGrid)"/>
+        </svg>
+        
+        <div class="relative flex gap-4 h-full">
+          <div class="w-16 h-16 rounded-full bg-[#d4cfc5] flex-shrink-0 flex items-center justify-center">
+            <svg class="w-7 h-7 text-[#8b8580]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <span class="text-[10px] text-[#c41e3a] font-medium uppercase tracking-wide font-sans">About</span>
+            <h3 class="text-lg font-medium mt-0.5 mb-2">Dr. Peter Damian Williams</h3>
+            <p class="text-[#6b6560] text-xs leading-relaxed font-sans">
+              Born Hobart, 1957. PhD Military History. After teaching in Japan, I began decades of interviews 
+              with Japanese veterans—perspectives rarely heard in Western histories. Based in Canberra.
+            </p>
+            <div class="flex gap-3 mt-2 text-[10px] text-[#8b8580] font-sans">
+              <span>📍 Canberra</span>
+              <span>🎓 PhD, MA, BA</span>
+              <span>🎖️ Pacific Theater</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Card -->
+      <a 
+        href="mailto:askme@peterdwilliams.com"
+        class="col-span-6 md:col-span-5 row-span-1 rounded-xl bg-[#c41e3a] text-white p-4 flex items-center justify-between group hover:bg-[#a01830] transition-colors"
+      >
+        <div>
+          <p class="text-[10px] text-white/70 uppercase tracking-wide font-sans">Get in touch</p>
+          <p class="font-medium text-sm">askme@peterdwilliams.com</p>
+        </div>
+        <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30 transition-colors">
+          <svg class="w-4 h-4 -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#d4cfc5] py-5 px-5">
+    <div class="max-w-5xl mx-auto flex justify-between items-center text-xs text-[#8b8580] font-sans">
+      <p>© 2025 Dr. Peter Williams</p>
+      <p>Military Historian · Canberra, Australia</p>
+    </div>
+  </footer>
+
+</body>
+</html>
